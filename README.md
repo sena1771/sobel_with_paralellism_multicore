@@ -1,0 +1,1 @@
+# sobel_with_paralellism_multicore
