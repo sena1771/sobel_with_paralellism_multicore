@@ -1,0 +1,17 @@
+-r
+/home/enginsena00/vtune_memory_consumption_seq
+--stack-stitching
+--data-limit-mb=1000
+--disk-space-limit=0
+--mrte-type=java,python
+--type=memory
+--memory-strategy=obj-size-min=32,hash-table-size=0
+--stack-unwind-limit=8388608
+--itt-config=frame
+--itt-config=task,event,counter
+--stackwalk=offline
+--mrte-mode=auto
+--platform-type=125
+--
+./sobel_seq
+input1.jpg

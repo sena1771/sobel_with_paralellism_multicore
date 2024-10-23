@@ -1,0 +1,28 @@
+--------------------------------------------------------------------------------
+I1 cache:         32768 B, 64 B, 8-way associative
+D1 cache:         49152 B, 64 B, 12-way associative
+LL cache:         58720256 B, 64 B, 14-way associative
+Command:          ./sobel_par input1.jpg 4
+Data file:        cachegrind_out_4
+Events recorded:  Ir I1mr ILmr Dr D1mr DLmr Dw D1mw DLmw
+Events shown:     Ir I1mr ILmr Dr D1mr DLmr Dw D1mw DLmw
+Event sort order: Ir I1mr ILmr Dr D1mr DLmr Dw D1mw DLmw
+Thresholds:       0.1 100 100 100 100 100 100 100 100
+Include dirs:     
+User annotated:   
+Auto-annotation:  off
+
+--------------------------------------------------------------------------------
+Ir             I1mr  ILmr  Dr            D1mr       DLmr      Dw          D1mw      DLmw      
+--------------------------------------------------------------------------------
+10,586,764,836 2,849 2,706 2,507,056,821 13,522,556 2,189,690 184,509,224 5,808,412 2,359,206  PROGRAM TOTALS
+
+--------------------------------------------------------------------------------
+Ir            I1mr ILmr Dr            D1mr       DLmr      Dw         D1mw      DLmw       file:function
+--------------------------------------------------------------------------------
+8,731,545,808    6    4 2,032,362,586 10,589,961   588,092 75,270,804 3,529,984 1,176,656  /home/enginsena00/sobel_par.c:thread_convolve
+  979,707,041   24   24   263,756,537  1,177,474 1,143,623 37,690,517   590,202   588,734  /home/enginsena00/sobel_par.c:main
+  819,842,888  735  699   193,073,013  1,691,885   454,801 52,704,380 1,461,797   591,425  ???:???
+   29,953,670    5    5     4,081,292     25,200        49  2,489,006       689         0  ???:jpeg_fill_bit_buffer
+   13,305,738   13   13    12,802,254     18,554         4 12,764,099   221,281     1,149  /build/glibc-LcI20x/glibc-2.31/string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S:__memcpy_avx_unaligned_erms
+
