@@ -11,3 +11,5 @@ source /opt/intel/oneapi/vtune/latest/vtune-vars.sh –for loading the VTune env
 vtune –version –for controlling my system is accessing vtune.
 
 If make do not work then make clean and then make .
+
+Project is at the master branch.
